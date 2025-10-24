@@ -11,7 +11,11 @@
             compatible = "zmk,behavior-macro";
             label = "INPUT_SOURCE_TOGGLE";
             #binding-cells = <0>;
-            bindings = <&kp LC(LA(SPACE))>;  // Ctrl+Option+Space for Mac input source switching
+            bindings
+                = <&macro_press &kp LCTRL &kp LALT>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LCTRL &kp LALT>
+                ;
         };
     };
 
