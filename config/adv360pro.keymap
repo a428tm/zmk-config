@@ -6,12 +6,12 @@
 
 / {
     macros {
-        // Input source toggle for Mac (Command+Space)
+        // Input source toggle for Mac (Ctrl+Option+Space)
         input_src: input_src {
             compatible = "zmk,behavior-macro";
             label = "INPUT_SOURCE_TOGGLE";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE)>;  // Command+Space for Mac input source switching
+            bindings = <&kp LC(LA(SPACE))>;  // Ctrl+Option+Space for Mac input source switching
         };
     };
 
