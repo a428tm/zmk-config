@@ -89,7 +89,7 @@
                 &kp TAB   &as LS(Q) Q  &as LS(W) W  &as LS(E) E  &as LS(R) R  &as LS(T) T  &input_src                                                            &cmd_shift_a &as LS(Y) Y  &as LS(U) U  &as LS(I) I  &as LS(O) O  &as LS(P) P  &as PIPE BSLH
                 &kp ESC   &as LS(A) A  &as LS(S) S  &as LS(D) D  &as LS(F) F  &as LS(G) G  &none           &kp LCTRL &kp LALT &kp PG_UP  &kp RCTRL           &none &as LS(H) H  &as LS(J) J  &as LS(K) K  &as LS(L) L  &as COLON SEMI &as DQT SQT
                 &kp LSHFT &as LS(Z) Z  &as LS(X) X  &as LS(C) C  &as LS(V) V  &as LS(B) B                            &kp DEL &kp PG_DN                           &as LS(N) N  &as LS(M) M  &as LT COMMA &as GT DOT  &as QMARK FSLH &kp RSHFT
-                &mo 2     &as TILDE GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp SPACE &kp BSPC   &kp LGUI  &kp RGUI &lt_custom 2 ENTER &lt_custom 1 SPACE              &kp UP &kp DOWN  &as LBRC LBKT &as RBRC RBKT &mo 2
+                &mo 2     &as TILDE GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp SPACE   &kp LGUI  &kp RGUI &lt_custom 2 ENTER &lt_custom 1 SPACE              &kp UP &kp DOWN  &as LBRC LBKT &as RBRC RBKT &mo 2
             >;
         };
         keypad {
@@ -98,7 +98,7 @@
                 &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &input_src                                                            &cmd_shift_a &kp Y  &kp KP_N7  &kp UP    &kp KP_N9     &kp KP_MINUS    &kp BSLH
                 &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp PG_UP  &kp RCTRL           &none &kp H  &kp LEFT  &kp DOWN    &kp RIGHT     &kp KP_PLUS     &kp SQT
                 &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp DEL &kp PG_DN                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
-                &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp SPACE &kp BSPC   &kp LGUI  &kp RGUI &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
+                &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp BSPC   &kp LGUI  &kp RGUI &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
             >;
         };
         fn {
