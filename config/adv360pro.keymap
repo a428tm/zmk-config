@@ -11,7 +11,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "AUTO_SHIFT";
             #binding-cells = <2>;
-            tapping-term-ms = <300>;  // Hold for 300ms to get shifted character
+            tapping-term-ms = <250>;  // Hold for 300ms to get shifted character
             quick-tap-ms = <150>;     // Allow quick repeated taps
             flavor = "tap-preferred"; // Prioritize tap for normal typing
             bindings = <&kp>, <&kp>;
@@ -61,18 +61,18 @@
             bindings = <
                 &as PLUS EQUAL  &as EXCL N1  &as AT N2  &as HASH N3  &as DLLR N4  &as PRCNT N5  &tog 1                                                           &mo 3  &as CARET N6  &as AMPS N7  &as STAR N8  &as LPAR N9  &as RPAR N0  &as UNDER MINUS
                 &kp TAB   &as LS(Q) Q  &as LS(W) W  &as LS(E) E  &as LS(R) R  &as LS(T) T  &none                                                            &none &as LS(Y) Y  &as LS(U) U  &as LS(I) I  &as LS(O) O  &as LS(P) P  &as PIPE BSLH
-                &kp ESC   &as LS(A) A  &as LS(S) S  &as LS(D) D  &as LS(F) F  &as LS(G) G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &as LS(H) H  &as LS(J) J  &as LS(K) K  &as LS(L) L  &as COLON SEMI &as DQT SQT
-                &kp LSHFT &as LS(Z) Z  &as LS(X) X  &as LS(C) C  &as LS(V) V  &as LS(B) B                            &kp HOME &kp PG_UP                           &as LS(N) N  &as LS(M) M  &as LT COMMA &as GT DOT  &as QMARK FSLH &kp RSHFT
-                &mo 2     &as TILDE GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &lt_custom 2 ENTER &lt_custom 1 SPACE              &kp UP &kp DOWN  &as LBRC LBKT &as RBRC RBKT &mo 2
+                &kp ESC   &as LS(A) A  &as LS(S) S  &as LS(D) D  &as LS(F) F  &as LS(G) G  &none           &kp LCTRL &kp LALT &kp PG_UP  &kp RCTRL           &none &as LS(H) H  &as LS(J) J  &as LS(K) K  &as LS(L) L  &as COLON SEMI &as DQT SQT
+                &kp LSHFT &as LS(Z) Z  &as LS(X) X  &as LS(C) C  &as LS(V) V  &as LS(B) B                            &kp DEL &kp PG_DN                           &as LS(N) N  &as LS(M) M  &as LT COMMA &as GT DOT  &as QMARK FSLH &kp RSHFT
+                &mo 2     &as TILDE GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp SPACE &kp BSPC   &kp LGUI  &kp RGUI &lt_custom 2 ENTER &lt_custom 1 SPACE              &kp UP &kp DOWN  &as LBRC LBKT &as RBRC RBKT &mo 2
             >;
         };
         keypad {
             bindings = <
                 &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
-                &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
-                &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
-                &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
-                &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
+                &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp KP_N7  &kp UP    &kp KP_N9     &kp KP_MINUS    &kp BSLH
+                &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp PG_UP  &kp RCTRL           &none &kp H  &kp LEFT  &kp DOWN    &kp RIGHT     &kp KP_PLUS     &kp SQT
+                &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp DEL &kp PG_DN                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
+                &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp SPACE &kp BSPC   &kp LGUI  &kp RGUI &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
             >;
         };
         fn {
