@@ -64,7 +64,6 @@
                 &kp ESC   &as LS(A) A  &as LS(S) S  &as LS(D) D  &as LS(F) F  &as LS(G) G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &as LS(H) H  &as LS(J) J  &as LS(K) K  &as LS(L) L  &as COLON SEMI &as DQT SQT
                 &kp LSHFT &as LS(Z) Z  &as LS(X) X  &as LS(C) C  &as LS(V) V  &as LS(B) B                            &kp HOME &kp PG_UP                           &as LS(N) N  &as LS(M) M  &as LT COMMA &as GT DOT  &as QMARK FSLH &kp RSHFT
                 &mo 2     &as TILDE GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &lt_custom 2 ENTER &lt_custom 1 SPACE              &kp UP &kp DOWN  &as LBRC LBKT &as RBRC RBKT &mo 2
-                &mo BT_FN  // momentary layer for Bluetooth functions
             >;
         };
         keypad {
@@ -92,17 +91,6 @@
                 &none &none        &none        &none        &none        &none        &none             &none &none &bt BT_CLR &none                      &none       &none &none      &none      &none &none &none
                 &none &none        &none        &none        &none        &none                                &none &none                                             &none &none      &none      &none &none &none
                 &none &none        &none        &none        &none                                 &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                   &bl BL_INC &bl BL_DEC &none &none &none
-            >;
-        };
-        BT_FN: layer_bt {
-            bindings = <
-                &bt BT_SEL 0   // FN + 1 → select profile 0
-                &bt BT_SEL 1   // FN + 2 → select profile 1
-                &bt BT_SEL 2   // FN + 3 → select profile 2
-                &bt BT_SEL 3   // FN + 4 → select profile 3
-                &bt BT_SEL 4   // FN + 5 → select profile 4
-                &bt BT_PAIR    // FN + P → enter pairing mode
-                &bt BT_CLR 0   // optional: FN + C → clear profile 0
             >;
         };
     };
